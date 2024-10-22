@@ -1,0 +1,118 @@
+/* Estilo general para el contenedor principal */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Elimina el scroll */
+    font-family: 'Poppins', sans-serif; /* Cambia la fuente global */
+  }
+  
+  .principal-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Asegura que ocupe la pantalla completa */
+    overflow: hidden;
+    background-color: #1a1a1a;
+  }
+  
+  /* Estilo del carrusel */
+  .principal-carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .principal-carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  .principal-carousel-image.principal-active {
+    opacity: 1;
+  }
+  
+  /* Estilo del header */
+  .principal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px; /* Aumentar el padding para evitar corte */
+    background: transparent; /* Eliminar fondo oscuro */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .principal-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .principal-gym-title {
+    color: #f5b042;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Ajuste de navegación */
+  .principal-nav-menu {
+    display: flex;
+    gap: 30px; /* Aumentar espacio entre los enlaces */
+    padding-right: 100px;
+  }
+  
+  .principal-nav-link {
+    color: white;
+    font-size: 20px; /* Aumentar tamaño de la fuente */
+    padding: 12px 20px; /* Ajuste de padding para evitar corte */
+    text-decoration: none;
+    transition: color 0.3s;
+    min-width: 100px; /* Asegurar que haya espacio suficiente */
+  }
+  
+  .principal-nav-link:hover {
+    color: #f5b042;
+  }
+  
+  /* Estilo del contenido */
+  .principal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .principal-content-title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  /* Estilo de iconos de redes sociales */
+  .principal-social-media {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .principal-social-link {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .principal-social-link:hover {
+    color: #f5b042;
+  }
+  

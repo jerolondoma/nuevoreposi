@@ -1,0 +1,168 @@
+/* Estilo general para el contenedor principal */
+.ingreso-container89 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+/* Estilo del carrusel */
+.ingreso-carousel89 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.ingreso-carousel-image89 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.ingreso-carousel-image89.ingreso-active89 {
+  opacity: 1;
+}
+
+/* Estilo del encabezado */
+.ingreso-header89 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+.ingreso-logo-title89 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ingreso-logo-image89 {
+  width: 50px;
+  height: 50px;
+}
+
+.ingreso-gym-title89 {
+  color: #f5b042;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Menú de navegación */
+.ingreso-nav-menu89 {
+  display: flex;
+  gap: 100px;
+  padding-right: 145px;
+}
+
+.ingreso-nav-link89 {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.ingreso-nav-link89:hover {
+  color: #f5b042;
+}
+
+/* Contenedor y formulario */
+.ingreso-content89 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ingreso-form89 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ingreso-form-title89 {
+  font-size: 24px;
+  color: #f5b042;
+  margin-bottom: 20px;
+}
+
+.ingreso-input-group89 {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingreso-label89 {
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.ingreso-input89 {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.ingreso-input89:focus {
+  border-color: #f5b042;
+  outline: none;
+}
+
+.ingreso-button89 {
+  padding: 12px;
+  background: #f5b042;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.ingreso-button89:hover {
+  background: #ffb142;
+}
+
+/* Redes sociales */
+.ingreso-social-media89 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.ingreso-social-link89 {
+  color: white;
+  transition: color 0.3s;
+}
+
+.ingreso-social-link89:hover {
+  color: #f5b042;
+}
+
+.ingreso-social-icon89 {
+  width: 30px;
+  height: 30px;
+}

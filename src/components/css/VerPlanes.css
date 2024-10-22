@@ -1,0 +1,159 @@
+/* Estilo general para la página de Ver Planes */
+.ver-planes-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    padding-top: 60px;
+}
+
+/* Carrusel de fondo */
+.ver-planes-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.ver-planes-carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.ver-planes-carousel-image.ver-planes-active {
+    opacity: 1;
+}
+
+/* Header */
+.ver-planes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.ver-planes-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ver-planes-logo-image {
+    width: 50px;
+    height: 50px;
+}
+
+.ver-planes-gym-title {
+    color: #f5b042;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navegación */
+.ver-planes-nav-menu {
+    display: flex;
+    gap: 20px;
+    padding-right: 100px;
+}
+
+.ver-planes-nav-link {
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+    min-width: 100px;
+}
+
+.ver-planes-nav-link:hover {
+    color: #f5b042;
+}
+
+/* Contenido principal */
+.ver-planes-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 50px;
+}
+
+/* Tabla de planes */
+.ver-planes-table-container {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 80%; /* Ocupa el 80% del contenedor */
+    margin: 20px 0;
+}
+
+.ver-planes-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.ver-planes-th,
+.ver-planes-td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.ver-planes-th {
+    background-color: #f5b042;
+}
+
+/* Botón en la tabla */
+.ver-planes-row-button {
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #f5b042;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ver-planes-row-button:hover {
+    background-color: #f5a832;
+}
+
+/* Iconos de redes sociales */
+.ver-planes-social-media {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.ver-planes-social-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.ver-planes-social-link:hover {
+    color: #f5b042;
+}

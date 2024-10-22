@@ -1,0 +1,195 @@
+/* Estilo general para la página de Factura */
+.factura-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    padding-top: 60px;
+}
+
+/* Carrusel de fondo */
+.factura-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.factura-carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.factura-carousel-image.factura-active {
+    opacity: 1;
+}
+
+/* Header */
+.factura-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.factura-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.factura-logo-image {
+    width: 50px;
+    height: 50px;
+}
+
+.factura-gym-title {
+    color: #f5b042;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navegación */
+.factura-nav-menu {
+    display: flex;
+    gap: 20px;
+    padding-right: 100px;
+}
+
+.factura-nav-link {
+    color: white;
+    font-size: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+    min-width: 100px;
+}
+
+.factura-nav-link:hover {
+    color: #f5b042;
+}
+
+/* Contenido principal */
+.factura-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 50px;
+}
+
+/* Búsqueda de clientes */
+.factura-search-container {
+    margin-bottom: 20px;
+}
+
+.factura-search-input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    margin-left: 10px;
+}
+
+.factura-search-results {
+    background: #ffffff;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.factura-search-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.factura-search-item:hover {
+    background: #f5b042;
+    color: #000;
+}
+
+/* Información del cliente seleccionado */
+.factura-cliente-info {
+    margin: 20px 0;
+    padding: 20px;
+    background: #1a1a1a;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 60%;
+}
+
+/* Botones */
+.factura-cobrar-button,
+.factura-submit-button {
+    background-color: #f5b042;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.factura-cobrar-button:hover,
+.factura-submit-button:hover {
+    background-color: #f5a832;
+}
+
+/* Formulario de Factura */
+.factura-form-container {
+    margin: 20px 0;
+    padding: 20px;
+    background: #1a1a1a;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.factura-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+/* Iconos de redes sociales */
+.factura-social-media {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.factura-social-link {
+    color: white;
+    transition: color 0.3s;
+}
+
+.factura-social-link:hover {
+    color: #f5b042;
+}
